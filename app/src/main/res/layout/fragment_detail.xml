@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/music_avatar" />
+
+            <SeekBar
+                android:id="@+id/seerbar"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:progressTint="@color/blue_400"
+                android:thumbTint="@color/blue_400" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="88dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_previous"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginRight="6dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_baseline_skip_previous"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:id="@+id/btn_play"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_baseline_play"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:id="@+id/btn_next"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="6dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_baseline_skip_next"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

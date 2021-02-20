@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/background_grey"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_offline"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/color_white"
+                android:text="Music Offline"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_online"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/color_white"
+                android:text="Music Online"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</layout>
